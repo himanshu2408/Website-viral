@@ -1,0 +1,289 @@
+<html>
+<head>
+	<title>ViralPost</title>
+	<link rel="icon" href="logo.png" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="w3.css">
+	<style type="text/css">
+		hr {border-width:10px; border-color: lightblue;}
+		#about {
+			background-image: url("background.jpg");
+			margin: auto;
+
+		}
+		#video2{
+			width: 100%;
+			height:80%;
+			object-fit: fill;
+		}
+		
+		
+	</style>
+	<script type="text/javascript">
+		var image1=new Image()
+		image1.src="1.png"
+		var image2=new Image()
+		image2.src="2.png"
+		var image3=new Image()
+		image3.src="3.png"
+		var image4=new Image()
+		image4.src="4.png"
+		var image5=new Image()
+		image5.src="5.png"
+		var image6=new Image()
+		image6.src="6.png"
+		var image7=new Image()
+		image7.src="7.png"
+		var image8=new Image()
+		image8.src="8.png"
+
+		$(document).ready(function () {
+			$('a[title]').qtip();
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+	<div class="w3-container   w3-teal" style="padding-top: 10px">
+		
+		<img src="logo.png" id="home" style="height: 120px; width: 120px; margin-top: 0px">
+		<h3 style="display: inline; font-weight: 700;" class="w3-jumbo"> VIRALPOST</h3>
+		
+		<div style="float: right;clear: both; width: auto;">
+			<ul class="w3-navbar w3-large w3-teal w3-left-align">
+				<li class="w3-hide-medium w3-hide-large w3-teal w3-opennav w3-right">
+					<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				</li>
+				<li class="w3-hide-small"><a href="#home">Home</a></li>
+				<li class="w3-hide-small"><a href="#about">About</a></li>
+				<li class="w3-hide-small"><a href="#how">How It Works</a></li>
+				<li class="w3-hide-small"><a href="#suli">Signup / Login</a></li>
+				<li class="w3-hide-small"><a href="https://www.facebook.com/viralpost.in" title="Like us on Facebook" target="_blank"><img src="fb.png" alt="Facebook" width="25px" height="25px"></a></li>
+				<li class="w3-hide-small"><a href="https://twitter.com/Viralpost_in" title="Follow us on Twitter" target="_blank"><img src="twitter.png" alt="Twitter" width="25px" height="25px"></a></li>
+				<li class="w3-hide-small"><a href="https://quiet-ravine-6926.herokuapp.com/contact/" title="Contact us by Email" target="_blank"><img src="msg.png" alt="Contact Us" width="25px" height="25px"></a></li>
+			</ul>
+
+			<div id="demo" class="w3-hide  w3-hide-large w3-hide-medium">
+				<ul class="w3-navbar w3-left-align w3-large w3-teal">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#how">How It Works</a></li>
+					<li><a href="#suli">Signup / Login</a></li>
+					<li><a href="https://www.facebook.com/viralpost.in"><img src="fb.png" width="25px" height="25px"></a></li>
+					<li><a href="https://twitter.com/Viralpost_in"><img src="twitter.png" width="25px" height="25px"></a></li>
+					<li><a href="https://quiet-ravine-6926.herokuapp.com/contact/"><img src="msg.png" width="25px" height="25px"></a></li>
+				</ul>
+				
+			</div>
+			<a href="https://play.google.com/store/apps/details?id=in.viralpost.viralpostapp"  target="_blank"><img src="google_play.png" width="200px" height="60px" style="float:right;margin-top: 10px"></a>
+		</div>
+	</div>
+
+
+	<div class="w3-container-fluid w3-row">
+		<div class="w3-twothird">
+			<img src="banner.jpg" style="width: 100%" onclick="document.getElementById('videopopup').style.display='block'">
+			<div id="about" >
+				<center><img src="ab-vp.png" style="margin-top: 25px;">
+					<p style="margin-bottom: 0;padding-bottom: 25px;" >A Micro - Blogging platform for college students <br>which provides a medium for college social networks to flourish.</p>
+				</center>
+			</div>
+		</div>
+		<div class="w3-rest w3-border w3-round" id="suli" style="border: solid;border-color: black;border-width: 20px;">
+
+			<div class=" w3-card-8 " style="max-width:600px">
+
+				<div class="w3-center"><br>
+					<img src="avatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+				</div>
+
+				<div class="w3-container">
+					<div class="w3-section">
+						<label><b>Username</b></label>
+						<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" required>
+
+						<label><b>Password</b></label>
+						<input type="password" class="w3-input w3-border" style="margin-bottom: 15px" placeholder="Enter Password" required>
+
+						<label><b>Personal Email</b></label>
+						<input type="email" class="w3-input w3-border w3-margin-bottom" style="margin-top: 5px" placeholder="Personal Email" required>
+
+						<label><b>Institutional Email</b></label>
+						<input type="email" class="w3-input w3-border w3-margin-bottom" placeholder="Institutional Email" required>
+
+
+						<button class="w3-btn w3-btn-block w3-green w3-large">Signup</button>
+						<div><br>
+							Already Have account?
+							<button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-blue w3-large" style="float: right;margin: 10px;">Login</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="videopopup" class="w3-modal">
+	<span onclick="document.getElementById('videopopup').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-hor-16 w3-display-topright">&times;</span>
+	<div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+
+		<video id="video2" controls>
+			<source src="vid.mp4" ></source>
+		</video>
+		
+
+		<div class="w3-container w3-border-top w3-padding-hor-16 w3-light-grey w3-center">
+			<button onclick="document.getElementById('videopopup').style.display='none'; document.getElementById('video2').pause();" type="button" class="w3-btn w3-red w3-round-xxlarge">Close</button>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+<div id="id01" class="w3-modal">
+	<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-hor-16 w3-display-topright">&times;</span>
+	<div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+
+		<div class="w3-center"><br>
+			<img src="avatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+		</div>
+
+		<div class="w3-container">
+			<div class="w3-section">
+				<label><b>Username</b></label>
+				<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+
+				<label><b>Password</b></label>
+				<input class="w3-input w3-border" type="text" placeholder="Enter Password">
+
+				<button class="w3-btn w3-btn-block w3-green">Login</button>
+				<input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+			</div>
+		</div>
+
+		<div class="w3-container w3-border-top w3-padding-hor-16 w3-light-grey">
+			<button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+			<span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+<div class="w3-container w3-teal w3-padding-jumbo" id="how" >
+	
+	<div class="w3-half w3-center" >
+		<h1 style="text-align: center;margin-top: 50px;">How It Works</h1>
+		<div class="w3-container ">
+			<center><br>Register using your personal and institutional email and <br> you will get automatically added as a member of the respective institution.<br><br>
+				Now whatever you post will be visible to all the members of the institution and vice versa.<br><br>
+				Enjoy viralposting! and find out...<br><br><br>
+				<a href="https://play.google.com/store/apps/details?id=in.viralpost.viralpostapp" target="_blank"><img src="google_play.png" width="200px" height="60px"></a>
+			</center><br><br>
+		</div>
+	</div>
+
+
+
+
+	<div class="w3-half" id="section-one-iphone">
+
+		<div class="w3-container" id="section-one-iphone">
+			<center>
+				<img src="1.png" name="slide" style="height: 480px; width: 265px;">
+				<script type="text/javascript">
+					var step=1
+					function slideit(){
+						document.images.slide.src=eval("image"+step+".src")
+						if(step<8)
+							step++
+						else
+							step=1
+						setTimeout("slideit()",2000)
+					}
+					slideit()
+				</script>
+			</center>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div class="w3-container w3-border-top w3-padding-hor-8 w3-light-grey">
+	<ul class="w3-navbar w3-large w3-left-align">
+		
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#how">How It Works</a></li>
+		<li><a href="#suli">Signup / Login</a></li>
+		<li><a href="https://quiet-ravine-6926.herokuapp.com/contact/">Contact Us</a></li>
+		<button onclick="document.getElementById('aboutdeveloper').style.display='block'" class="w3-btn w3-green w3-large w3-right w3-round-xxlarge" style="float: right;">About Developer</button>
+	</ul>
+
+</div>
+
+
+
+<div id="aboutdeveloper" class="w3-modal">
+	<span onclick="document.getElementById('aboutdeveloper').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-hor-16 w3-display-topright">&times;</span>
+	<div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+
+		<div class="w3-center"><br>
+			<img src="himanshu.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+		</div>
+
+		<div class="w3-container">
+			<div class="w3-section">
+				<center>
+					<b>Himanshu Singh <br>
+						Undergraduate Student(B.Tech)<br>
+						Indian Institute of Technology Guwahati<br>
+						Email Id: singhhimanshu2408@gmail.com<br>
+						Alternate Email Id: shimanshu@iitg.ernet.in<br>
+						Phone no: +91-8011022295<br>
+					</b>
+				</center>
+				
+			</div>
+		</div>
+
+		<div class="w3-container w3-border-top w3-padding-hor-16 w3-light-grey w3-center">
+			<button onclick="document.getElementById('aboutdeveloper').style.display='none'" type="button" class="w3-btn w3-red w3-round-xxlarge">Close</button>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	function myFunction() {
+		var x = document.getElementById("demo");
+		if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		} else { 
+			x.className = x.className.replace(" w3-show", "");
+		}
+	}
+</script>
+
+</body>
+</html>
